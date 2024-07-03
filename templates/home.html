@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prompt:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <title>Home</title>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    <div class="header_container">
+        <div class="header1">
+            <h1 id="myHeader">Home</h1>
+        </div>
+        <div class="header2"></div>
+        <div class="header3"></div>
+        <div class="header4"></div>
+    </div>
+    <br>
+    <div class="button_container">
+        <a href="top_left" class="button">
+            <div class="button_text">Top Left</div>
+        </a>
+        <a href="top_right" class="button">
+            <div class="button_text">Top Right</div>
+        </a>
+    </div>
+    <br>
+    <div class="button_container">
+        <a href="about" class="button">
+            <div class="button_text">About</div>
+        </a>
+        <a href="https://jkbgames.com/w/" class="button">
+            <img src="{{ url_for('static', filename='Site-logo.png') }}" alt="Wiki I set up">
+        </a>
+    </div>
+    <br>
+    <div class="button_container">
+        <a href="https://github.com/ErichSW/CS162__homework" class="button">
+            <img src="{{ url_for('static', filename='GitHub-logo.png') }}" alt="Github Profile">
+        </a>
+        <a href="https://www.linkedin.com/in/erichwinchester/" class="button">
+            <img src="{{ url_for('static', filename='Linkedin.png') }}" alt="Linkedin Profile">
+        </a>
+    </div>
+</body>
+</html>
